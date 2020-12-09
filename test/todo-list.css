@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #808080;
+  background-color: #10ac84;
+}
+
+main {
+  /* border: 1px solid red; */
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px 50px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer {
+  /* border: 1px solid red; */
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+#main-title {
+  color: #10ac84;
+
+}
+
+input[type=text] {
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  /* width: 100%; */
+  align-items: center;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* CSS Tutorial (#5) */
+
+input[type=checkbox] {
+  display: none;
+}
+
+.tick {
+  border: 3px solid #808080;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: '\2713';
+  font-size: 20px;
+  color: #10ac84;
+  display: none; 
+  height: 100%;
+}
+
+.done .tick::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+.todo-item button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+footer a, p{
+  color: #fff;
+  margin: 10px;
+}
